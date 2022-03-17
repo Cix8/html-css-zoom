@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
 html {
     font-size: 100%;
 }
@@ -14,6 +15,11 @@ img {
     max-height: 70vh;
 }
 
+ul {
+    list-style: none;
+}
+
+/* HEADER */
 .header {
     width: 100%;
     height: 5vh;
@@ -44,6 +50,7 @@ img {
     cursor: pointer;
 }
 
+/* MAIN */
 .main {
     width: 100%;
     height: 85vh;
@@ -51,7 +58,7 @@ img {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
+    overflow-y: auto;
     justify-content: center;
 }
 
@@ -67,4 +74,72 @@ img {
     padding: .3rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+.items-container {
+    color: white;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu a {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-menu i {
+    font-size: 2rem;
+}
+
+.right {
+    line-height: 10vh;
+    color: red;
+    background-color: #4a4a4aa9;
+}
+
+.items-container a {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 15px;
+    right: -10px; 
+}
+
+.sub-menu i {
+    font-size: .6rem;
+}
+
+li:hover a > i {
+    color: #49c401;
+}
+
+.sub-menu:hover i {
+    color: #49c401;
+}
+
+.right a:hover {
+    text-decoration: underline;
 }
